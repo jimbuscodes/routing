@@ -37,3 +37,7 @@ nav .active {
   text-decoration: none;
   color: #ff0000;
 }
+
+#app {
+  padding: 20px;
+}
