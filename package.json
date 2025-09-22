@@ -11,5 +11,8 @@
     "compileSASS": "sass scss/styles.scss css/styles.css -w --no-source-map"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sweetalert2": "^11.23.0"
+  }
 }

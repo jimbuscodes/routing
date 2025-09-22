@@ -3,16 +3,26 @@ function initListeners() {}
 function route() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
-  let pageContent = pageID + "Content";
-  console.log("ROUTING TO: " + pageID);
 
   if (pageID === "") {
     $.get("pages/home.html", (data) => {
       $("#app").html(data);
+    }).fail((error) => {
+      Swal.fire({
+        title: "PAGE NOT FOUND",
+        text: "That thing is still around?",
+        icon: "error",
+      });
     });
   } else {
     $.get("pages/" + pageID + ".html", (data) => {
       $("#app").html(data);
+    }).fail((error) => {
+      Swal.fire({
+        title: "PAGE NOT FOUND",
+        text: `Page ${pageID} not found.`,
+        icon: "error",
+      });
     });
   }
 }
