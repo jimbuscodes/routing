@@ -41,3 +41,8 @@ nav .active {
 #app {
   padding: 20px;
 }
+
+.about {
+  color: #fff;
+  background-color: #000;
+}
