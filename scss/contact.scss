@@ -5,4 +5,60 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  text-align: center;
+  padding-top: 20px;
+  background-image: url(../images/space_dog.jpg);
+  background-repeat: round;
+  background-position: 50px;
+  background-size: cover;
+
+  .contact-form {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+    border: solid 2px #000;
+    margin-bottom: 20px;
+
+    .input-name-wrapper {
+      width: 100%;
+      height: 10%;
+
+      .name {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+      }
+    }
+
+    .input-wrapper1 {
+      width: 100%;
+      height: 10%;
+
+      .email {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+      }
+    }
+
+    .input-wrapper2 {
+      width: 100%;
+      height: 10%;
+
+      .phone {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+      }
+    }
+
+    button {
+      padding: 10px;
+    }
+  }
 }
