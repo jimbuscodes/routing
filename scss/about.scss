@@ -1,4 +1,8 @@
 .about {
   color: #000;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }

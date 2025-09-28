@@ -1,4 +1,41 @@
 .events {
   color: #000;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 150px;
+
+  .events_wrapper {
+    display: flex;
+    max-width: 500px;
+    height: 300px;
+    background-color: #3aa6e0;
+    margin-bottom: 150px;
+    border: solid 2px #000;
+
+    img {
+      max-width: 200px;
+      height: 300px;
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      margin-right: 20px;
+      justify-content: space-around;
+
+      h2 {
+        color: #fff;
+        text-align: center;
+      }
+
+      p {
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
 }
